@@ -8,10 +8,19 @@ import "bootstrap/dist/js/bootstrap.bundle.js";
 
 import Firebase from 'firebase';
 //import { initializeApp } from 'firebase/app';
-import { firebaseConfig } from "../firebase-config";
+//import { firebaseConfig } from "../firebase-config";
 
 
-Firebase.initializeApp(firebaseConfig);
+Firebase.initializeApp({
+  apiKey: process.env.FIREBASE_APIKEY,
+  authDomain: process.env.FIREBASE_AUTHDOMAIN,
+  projectId: process.env.FIREBASE_PROJECTID,
+  storageBucket: process.env.FIREBASE_STORAGEBUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGINGSENDERID,
+  appId: process.env.FIREBASE_APPID
+});
+
+process.env.FIREBASE_APIKEY;
 
 Vue.config.productionTip = false;
 
