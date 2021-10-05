@@ -7,20 +7,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.bundle.js";
 
 import Firebase from 'firebase';
-import { initializeApp } from 'firebase/app';
-import { firebaseConfig } from "../firebase-config";
+//import { initializeApp } from 'firebase/app';
+//import { firebaseConfig } from "../firebase-config";
 
 
 Firebase.initializeApp({
-  apiKey: process.env.FIREBASE_APIKEY,
-  authDomain: process.env.FIREBASE_AUTHDOMAIN,
-  projectId: process.env.FIREBASE_PROJECTID,
-  storageBucket: process.env.FIREBASE_STORAGEBUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGINGSENDERID,
-  appId: process.env.FIREBASE_APPID
+  apiKey: process.env.VUE_APP_FIREBASE_APIKEY,
+  authDomain: process.env.VUE_APP_FIREBASE_AUTHDOMAIN,
+  projectId: process.env.VUE_APP_FIREBASE_PROJECTID,
+  storageBucket: process.env.VUE_APP_FIREBASE_STORAGEBUCKET,
+  messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGINGSENDERID,
+  appId: process.env.VUE_APP_FIREBASE_APPID
 });
 
-process.env.FIREBASE_APIKEY;
+//process.env.FIREBASE_APIKEY;
 
 Vue.config.productionTip = false;
 
