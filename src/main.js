@@ -7,8 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.bundle.js";
 
 import Firebase from 'firebase';
-//import { initializeApp } from 'firebase/app';
-//import { firebaseConfig } from "../firebase-config";
+import { initializeApp } from 'firebase/app';
+import { firebaseConfig } from "../firebase-config";
 
 
 Firebase.initializeApp({

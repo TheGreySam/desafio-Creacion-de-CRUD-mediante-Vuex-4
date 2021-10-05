@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import Store from '../store';
-//import Firebase from "firebase"
+import Firebase from "firebase";
 
 Vue.use(VueRouter);
 
